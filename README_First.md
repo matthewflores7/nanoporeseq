@@ -12,21 +12,26 @@ Workspace Setup, General coding outline, and troubleshooting found below.
 ----------------------------------------------------------------------------------------------------------------------------------------
 	Step 1:
 		
-		Download your RAW fastq files from the website
+		Download your RAW fastq files from the website you ran them from. The Raw fastq files should be the larger of the .fq files available to you.
 
 	Step 2: 
 
-		Create a folder on your Desktop with a unique name, that DOES NOT have any spaces
+		Create a folder on your Desktop with a unique name that DOES NOT have any spaces.
 			ex: seqdata060923
+   			ex: mattvirus051223
 
 	Step 4:
 
-		Using Finder, move the RAW fastq files into the folder
+		Using Finder, move the RAW fastq files into the folder you made. 
 
 	Step 5:
 
-		You will need to download a few files from the internet, particularly relating to the Viral Reference genome 
+		You will need to download a few files from the internet, particularly those relating to the Viral Reference genome 
 		you want to use. The following links will lead you to either the KOS or Strain 17 data.
+
+  		https://www.ncbi.nlm.nih.gov/nuccore/NC_001806   (Strain 17 ~Aug. 2018)
+    		https://www.ncbi.nlm.nih.gov/nuccore/KT899744.1  (KOS ~Nov. 2015)
+      		https://www.ncbi.nlm.nih.gov/nuccore/            (Search this database with the terms "{your parent strain} HSV1 complete")
 
 	Step 6:
 
@@ -74,6 +79,29 @@ Workspace Setup, General coding outline, and troubleshooting found below.
 		Then, find the Nanopore_Step1.sh script in Finder and drag it into the command prompt. This will load the script and the "sh" will tell iTerm2 to run it. 
 
 **At this point, you will have the sorted bam files with IGV index files (.bam.bai) in the bam_aligned_sorted folder**
+
+
+Working with IGV Viewer
+----------------------------------------------------------------------------------------------------------------------------------------
+
+	Step 11: 
+ 
+ 		Open IGV Viewer and navigate to the "Genome" bar on the top menu. Load in your reference .fasta in your named folder.
+
+   	Step 12:
+
+      		Navigate to "load file" in the sequences tab and load in the .gff3 file (This step is a work-in-progress. I am adding a line of code that will index the .gff3 file automatically to make it loadable.)
+
+
+ 	Step 13:
+
+  		First, load in using the "load file" tab the .bai file for the alignment you want to view, then load the .bam file for the same alignment. This will visualize the entire alignment file for you!
+    
+    		Here are some useful resources for working with IGV: 
+      		https://igv.org/workshops/March2017/SlidesHandouts/IGV_SlideDeck.pdf
+		https://notebook.community/ssjunnebo/pathogen-informatics-training/Notebooks/RNA-Seq/transcriptome-visualisation
+  		https://evomics.org/wp-content/uploads/2011/09/IGVworkshop_CSH_2013.pdf
+
 
 
 
