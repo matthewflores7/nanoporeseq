@@ -76,7 +76,7 @@ Workspace Setup, General coding outline, and troubleshooting found below.
 
 			sh
 
-		Then, find the Nanopore_Step1.sh script in Finder and drag it into the command prompt. This will load the script, showing you the direct file path, and the "sh" will tell your computer through the terminal to run it. 
+		Then, find the Nanopore_Step1.sh script in Finder and drag it into the command prompt. This will load the script, showing you the direct file path, and the "sh" will tell your computer through the terminal to run it. Press the Enter button.
 
 **At this point, you will have the sorted bam files with IGV index files (.bam.bai) in the bam_aligned_sorted folder**
 
