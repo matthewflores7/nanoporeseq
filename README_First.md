@@ -8,7 +8,7 @@ Workspace Setup, General coding outline, and troubleshooting found below.
 
 
 
-**Workspace Setup **
+****Workspace Setup****
 ----------------------------------------------------------------------------------------------------------------------------------------
 	Step 1:
 		
@@ -48,7 +48,7 @@ Workspace Setup, General coding outline, and troubleshooting found below.
 
 
 
-**Coding**
+****Coding****
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 	Step 7:
@@ -76,12 +76,12 @@ Workspace Setup, General coding outline, and troubleshooting found below.
 
 			sh
 
-		Then, find the Nanopore_Step1.sh script in Finder and drag it into the command prompt. This will load the script and the "sh" will tell iTerm2 to run it. 
+		Then, find the Nanopore_Step1.sh script in Finder and drag it into the command prompt. This will load the script, showing you the direct file path, and the "sh" will tell your computer through the terminal to run it. 
 
 **At this point, you will have the sorted bam files with IGV index files (.bam.bai) in the bam_aligned_sorted folder**
 
 
-Working with IGV Viewer
+****Working with IGV Viewer****
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 	Step 11: 
@@ -97,19 +97,21 @@ Working with IGV Viewer
 
   		First, load in using the "load file" tab the .bai file for the alignment you want to view, then load the .bam file for the same alignment. This will visualize the entire alignment file for you!
     
-    		Here are some useful resources for working with IGV: 
-      		https://igv.org/workshops/March2017/SlidesHandouts/IGV_SlideDeck.pdf
+    	Here are some useful resources for working with IGV: 
+      	https://igv.org/workshops/March2017/SlidesHandouts/IGV_SlideDeck.pdf
 		https://notebook.community/ssjunnebo/pathogen-informatics-training/Notebooks/RNA-Seq/transcriptome-visualisation
   		https://evomics.org/wp-content/uploads/2011/09/IGVworkshop_CSH_2013.pdf
 
 
 
 
-**Troubleshooting**
+****Troubleshooting****
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-The coding file is running and I see the output from the "echo" lines, but no files are being generated. It will say a file doesn't exist.
+_The coding file is running and I see the output from the "echo" lines, but no files are being generated. It will say a file doesn't exist._
+
   Solution: Make sure you are both in the correct directory (you can see your .FQ files and .fasta using the "ls" command") and that the proper conda environment is loaded.
 
-One part of the script is failing (i.e. I'm not seeing a .bai file being created that I need to view the sequences). What is going on?
-  The first step is to be sure you have all the proper software loaded in your conda environment and that it is active. See the "README_Environment_Setup" file for details on how to do that. The second step is to attempt to manually run each line of code and verify everything is working when it is outside the script. See the "MANUAL_Data_Entry" file for how to run individual files and troubleshoot. 
+_One part of the script is failing (i.e. I'm not seeing a .bai file being created that I need to view the sequences). What is going on?_
+
+  Solution: The first step is to be sure you have all the proper software loaded in your conda environment and that it is active. See the "README_Environment_Setup" file for details on how to do that. The second step is to attempt to manually run each line of code and verify everything is working when it is outside the script. See the "MANUAL_Data_Entry" file for how to run individual files and troubleshoot. 
