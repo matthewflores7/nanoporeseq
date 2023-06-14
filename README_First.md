@@ -108,7 +108,7 @@ Workspace Setup, General coding outline, and troubleshooting found below.
 ****Troubleshooting****
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-_The coding file is running and I see the output from the "echo" lines, but no files are being generated. It will say a file doesn't exist._
+_The coding file is running and I see the output from the "echo" lines, but no files are being generated in any of the folders. It will say a file doesn't exist._
 
   Solution: Make sure you are both in the correct directory (you can see your .FQ files and .fasta using the "ls" command") and that the proper conda environment is loaded.
 
